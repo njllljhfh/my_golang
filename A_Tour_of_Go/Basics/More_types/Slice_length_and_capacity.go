@@ -17,18 +17,22 @@ import "fmt"
 // 注意：对slice，进行re-slicing时，是以底层的array为基础进行re-slicing，而不是以上一次的切片结果为基础。
 func main() {
 	s := []int{2, 3, 5, 7, 11, 13}
+	fmt.Printf("&s=%p\n", &s)
 	printSlice(s)
 
 	// Slice the slice to give it zero length.
 	s = s[:0]
+	fmt.Printf("&s=%p\n", &s)
 	printSlice(s)
 
 	// Extend its length.
 	s = s[:4]
+	fmt.Printf("&s=%p\n", &s)
 	printSlice(s)
 
 	// Drop its first two values.
 	s = s[2:] // 仔细观察这个切片的容量
+	fmt.Printf("&s=%p\n", &s)
 	printSlice(s)
 }
 

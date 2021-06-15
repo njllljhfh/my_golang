@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+// [官网教程](https://tour.golang.org/flowcontrol/8)
 func Sqrt(x float64) float64 {
 	z := 1.0
 	for i := 0; i < 10; i++ {

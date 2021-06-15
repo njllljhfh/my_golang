@@ -14,7 +14,7 @@ import "fmt"
 // b = b[:cap(b)] // len(b)=5, cap(b)=5
 // b = b[1:]      // len(b)=4, cap(b)=4
 func main() {
-	a := make([]int, 5)
+	a := make([]int, 4)
 	printSlice1("a", a)
 
 	b := make([]int, 0, 5)
