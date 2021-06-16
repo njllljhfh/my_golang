@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 // Range and Close
 // A sender can `close` a channel to indicate that no more values will be sent.
@@ -37,4 +35,16 @@ func main() {
 	for i := range c {
 		fmt.Println(i)
 	}
+
+	// dragon：测试 ok 值
+	// for i := 0; i < 10*cap(c); i++ {
+	// 	r, ok := <-c
+	// 	if !ok {
+	// 		// 管道 c 被关闭了。
+	// 		fmt.Println(r, ok)
+	// 		break
+	// 	} else {
+	// 		fmt.Println(r, ok)
+	// 	}
+	// }
 }
