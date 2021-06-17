@@ -16,3 +16,7 @@
 
 # mac上的冗余文件
 .DS_Store
+
+.idea
+
+
