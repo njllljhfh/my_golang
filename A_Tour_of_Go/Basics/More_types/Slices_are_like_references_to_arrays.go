@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 // 注意：Go的切片与Python的切片不同。
-// A slice does not store any data, it just describes a section of an underlying array.
+// A slice does not store any data, it just describes a section4_4 of an underlying array.
 // Changing the elements of a slice modifies the corresponding elements of its underlying array.
 // Other slices that share the same underlying array will see those changes.
 func main() {
